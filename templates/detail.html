@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="el">
+	<head></head>
+	<body>
+		{% if object %}
+			<h1>
+			{{ object.full_name }}, a {{ object.age }} year old,
+			{{ object.race }} {{ object.gender|lower }} died on {{ object.date }}
+			in a {{ object.type|lower }} at {{ object.address }} in {{ object.neighborhood }}.
+			</h1>
+		{% else %}
+			<h1>Invalid Request ID</h1>
+		{% endif %}
+	</body>
+</html>
+
